@@ -1,5 +1,7 @@
 ###Scala###
 
+.DS_Store
+
 *.class
 *.log
 
@@ -25,3 +27,4 @@ project/plugins/project/
 # Project-specific
 /data/
 /_volumes/
+
