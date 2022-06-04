@@ -5,6 +5,9 @@ services:
     build: postgres
     ports:
       - 5432:5432
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - POSTGRES_PASSWORD= password  ## CAUTION: When `POSTGRES_HOST_AUTH_METHOD=trust` exists, this option will be ignored
     # volumes:
     #   - ./_volumes/postgres:/var/lib/postgresql/data
   backend:
